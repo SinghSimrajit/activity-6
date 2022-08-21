@@ -1,0 +1,42 @@
+from ast import If, Str
+import string
+
+
+
+#Write  a Python program  that  takes  distance  and  time  as  input  and  displays  the  speed  in,  meters  per second,kilometres per hour and miles per hour.
+
+print('Please input distance in meters')
+
+distance = int(input())
+
+print('Please input time in hours')
+
+hours = int(input())
+
+
+print('Please input minutes')
+
+mint = int(input())
+
+
+print('Please input seconds in meters')
+
+seconds = int(input())
+
+
+
+Hresult = hours * 60 * 60
+
+Mresult = mint * 60
+
+Hmresult = Hresult + Mresult + seconds
+
+H2result = Hmresult/3600
+
+km = distance/1000
+
+miles = km / 1.6
+
+print('this is your meters/second' , distance / Hmresult)
+print('in km/h', km/H2result)
+print('miles/h', miles/ H2result)
